@@ -1,0 +1,98 @@
+:root {
+    --cor-btn: #1F8BD6;
+    --cor-cinza: #f1f1f1;
+}
+header {
+    background-color: var(--cor-cinza);
+}
+header h1 {
+    font-size: 30px;
+    padding: 10px;
+}
+footer {
+    background-color: var(--cor-cinza);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+.wrapper-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}
+button, input[type="submit"] {
+    transition: transform 0.7s ease;
+}
+button:hover{
+    transform: scale(1.1);
+}
+#btnSubmit {
+    background-color: var(--cor-btn);
+    border: none;
+    padding: 20px 70px;
+    color: #fff;
+    border-radius: 50px;
+    transition: transform 0.7s ease;
+}
+input[type="submit"]:hover {
+    transform: scale(1.03);
+}
+#sectionImgs{
+    display: flex;
+    gap: 20px;
+}
+#sectionImgs div img {
+    max-width: 300px;
+}
+input[type="file"] {
+    display: none;
+}
+.input-file {
+    border: 1px #b3b3b3 dashed;
+    padding: 100px 0;
+    margin-bottom: 20px;
+    z-index: 999 !important;
+    background-color: #f1f1f14e;
+    cursor: pointer;
+}
+.submit-file {
+    background-color: var(--cor-btn);
+    border: none;
+    padding: 15px 40px;
+    color: #fff;
+    border-radius: 12px;
+    transition: transform 0.7s ease;
+}
+.submit-file:hover {
+    transform: scale(1.1);
+}
+.progress-bar-active {
+    width: 0%;
+    height: 15px;
+    background-color: var(--cor-btn);
+    margin-bottom: 10px;
+    border-radius: 50px;
+    display: flex;
+    transition: width 0.5s ease;
+}
+.progress-bar-inactive {
+    width: 100%;
+    height: 15px;
+    background-color: #d3d3d3;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    display: none;
+} 
+.wrapper-progress {
+    display: none;
+}
+.fileNameText {
+    display: none;
+}
+.icon-file {
+    max-width: 100px;
+}
