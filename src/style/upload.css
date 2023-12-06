@@ -1,3 +1,12 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+::selection {
+    background-color: #000;
+    color: #fff;
+}
 :root {
     --cor-btn: #1F8BD6;
     --cor-cinza: #f1f1f1;
@@ -8,6 +17,17 @@ header {
 header h1 {
     font-size: 30px;
     padding: 10px;
+}
+.wrapper-back img{
+    max-width: 30px;
+    cursor: pointer;
+}
+.wrapper-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 footer {
     background-color: var(--cor-cinza);

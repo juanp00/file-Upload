@@ -4,54 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Image Profile</title>
+    <link rel="stylesheet" href="src/style/upload.css">
+    <link rel="stylesheet" href="src/style/index.css">
+    <title>Gallery - Project</title>
 </head>
 <body>
-    <main class="">
+    <main>
         <header class="container-fluid p-0 text-center">
-            <h1 class="m-0">IMAGE PROFILE</h1>
+            <h1 class="m-0">Gallery Project</h1>
             <p class="m-0 pb-3">Um projeto sobre upload de arquivos com js.</p>
         </header>
         
-        <section class="container wrapper-main p-5">
-            <div class="text-center mb-3 wrapper-progress">
-                <p class="text-progress"></p>
+        <section class="container wrapper-gallery pt-5 pb-5">
+            <div class="row row-gallery gap-3">
             </div>
-            <div class="progress-bar-inactive">
-                <span class="progress-bar-active"></span>
+        </section>
+
+        <section class="popup-img">
+            <div class="wrapper-icon">
+                <img class="icon-close" src="src/img/icone-fechar.png" alt="Icone fechar">
             </div>
-            <form class="d-flex flex-column">
-                <div class="input-file d-flex justify-content-center flex-column">
-                    <div class="d-flex justify-content-center">
-                        <img class="icon-file" src="img/upload-de-arquivo.png" alt="">
-                        <input type="file" name="file" id="urlFile">
-                    </div>
-                    <p class="text-center pt-3">Selecione uma imagem para o seu perfil</p>
-                    <div class="fileNameText d-flex justify-content-center pt-3 "></div>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <button id="btnSubmit">ENVIAR IMAGEM</button>
-                </div>
-            </form>
-            <section id="sectionImgs">
-            
-            </section>
+
+            <img class="current-img" src="" alt="">
+
+            <div class="info-img d-flex gap-2">
+                <p class="size-img"></p>
+                <p class="type-img"></p>
+            </div>
+            <div class="wrapper-btn-download">
+                <button id="download-img">BAIXAR IMAGEM</button>
+            </div>
         </section>
 
         <footer class="container-fluid p-0 text-center">
             <p class="pt-2 pb-2 m-0">www.juandev.com.br</p>
         </footer>
     </main>
+    <!-- Script load images -->
+    
+    <!-- Button add image -->
+    <div class="btn-add-image">
+        <a href="upload.html"><img src="src/img/plus.png" alt="Botão de adicionar imagens a galeria"></a>
+    </div>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
     <!-- Script firebase -->
     <script src="https://www.gstatic.com/firebasejs/8.6.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.0/firebase-storage.js"></script>
-
-    <!-- Script local -->
-    <script src="fileupload.js"></script>
-    <script src="index.js"></script>
+    <script src="src/js/index.js"></script>
 </body>
 </html>
